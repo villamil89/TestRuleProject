@@ -1,0 +1,26 @@
+//created on: 28/01/2021
+package com.sample.rules
+
+//list any import classes here.
+import com.sample.droolscours.Account;
+import com.sample.droolscours.CashFlow;
+import com.sample.utils.OutputDisplay;
+
+//declare any global variables here
+global OutputDisplay results;
+
+rule "Your First Rule"
+    when
+    	Account(  )
+    then
+    	results.showText("La cuenta existe");
+    	CashFlow cashFlow = new CashFlow();
+    insert (cashFlow);
+end
+
+rule "Your Second Rule"
+    when
+       CashFlow(  )
+    then
+       results.showText("El flujo de caja existe");
+end

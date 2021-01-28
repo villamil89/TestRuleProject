@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+        <kbase name="rules" packages="com.sample.rules.regla1">
+        <ksession name="ksession-rules1"/>
+    </kbase>
+    <kbase name="rules2" packages="com.sample.rules.regla2">
+        <ksession name="ksession-rules2"/>
+    </kbase>
+    <kbase name="rules3" packages="com.sample.dtables">
+        <ksession name="ksession-tables"/>
+    </kbase>
+</kmodule>

@@ -1,0 +1,12 @@
+package com.myspace.testruleproject.ruledrl;
+
+import java.lang.Number;
+import com.myspace.testruleproject.User;
+
+rule "CalculateScore"
+	dialect "java"
+	when
+		User( age > 18 )
+	then
+		System.out.println("User is greater than 18");
+end
